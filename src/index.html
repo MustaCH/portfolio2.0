@@ -25,8 +25,66 @@
     class="bg-neutral-900 lg:mx-24 bg-gradient-to-t from-black via-neutral-400 to-black"
   >
     <header
-      class="lg:grid grid-cols-[repeat(5,_1fr)] grid-rows-[repeat(1,_1fr)] gap-x-[0px] gap-y-[0px]"
+      class="relative lg:grid grid-cols-[repeat(5,_1fr)] grid-rows-[repeat(1,_1fr)] gap-x-[0px] gap-y-[0px]"
     >
+      <div>
+        <button
+          id="toggle-menu"
+          onclick="OpenSidebar()"
+          class="absolute top-3 right-4 text-white"
+          for="sidebar"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+        <button
+          id="close-menu"
+          onclick="CloseSidebar()"
+          class="hidden absolute top-3 right-4 text-white"
+          for="sidebar"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+            />
+          </svg>
+        </button>
+      </div>
+      <nav
+        id="dropdown"
+        class="hidden absolute left-10 top-12 lg:hidden text-white h-fit backdrop-blur-lg rounded-lg py-6 drop-shadow-2xl transform scale-0 origin-top-right"
+      >
+        <div class="">
+          <ul
+            class="flex flex-col gap-6 justify-between px-24 text-lg text-center font-semibold"
+          >
+            <a href="#">
+              <li>HOME</li>
+            </a>
+            <a href="#about"><li>ABOUT ME</li></a>
+            <a href="#projects"><li>PROJECTS</li></a>
+            <a href="#contact"><li>CONTACT</li></a>
+          </ul>
+        </div>
+      </nav>
       <nav
         class="hidden lg:inline [grid-area:1_/_3_/_2_/_6] text-white h-fit py-6 bg-neutral-700 drop-shadow-2xl"
       >
@@ -55,7 +113,7 @@
         </ul>
       </nav>
       <svg
-        class="hidden lg:inline absolute z-50 top-52 left-0 rotate-90 opacity-5"
+        class="hidden lg:inline absolute z-50 top-52 left-[-8%] rotate-90 opacity-5"
         width="483"
         height="200"
         viewBox="0 0 483 245"
@@ -120,9 +178,7 @@
       <div
         class="hidden [grid-area:1_/_1_/_6_/_3] lg:flex flex-col justify-between items-center bg-neutral-900 drop-shadow-2xl"
       >
-        <h2
-          class="hidden lg:inline uppercase text-white font-bold text-3xl my-4"
-        >
+        <h2 class="lg:inline uppercase text-white font-bold text-3xl my-4">
           Portfolio
         </h2>
         <div class="z-50 font-bold uppercase mb-36">
@@ -153,9 +209,6 @@
         class="[grid-area:2_/_3_/_6_/_6] bg-[url('./img/header-img-gray.jpg')] lg:grayscale bg-cover bg-center h-lvh"
       >
         <div class="lg:hidden flex flex-col items-center">
-          <h2 class="uppercase text-white font-bold text-3xl py-4">
-            Portfolio
-          </h2>
           <div class="z-50 font-bold uppercase mt-80">
             <h2 class="text-white text-xl lg:text-3xl">My name is</h2>
             <h1 class="text-white text-4xl lg:text-6xl">Ignacio Poletti</h1>
@@ -782,5 +835,28 @@
         >
       </p>
     </footer>
+    <script>
+      let dropdown = document.querySelector("#dropdown");
+      let toggleMenu = document.querySelector("#toggle-menu");
+      let closeMenu = document.querySelector("#close-menu");
+
+      const OpenSidebar = () => {
+        dropdown.classList.remove("hidden");
+        dropdown.classList.add(
+          "scale-100",
+          "transition-transform",
+          "duration-150",
+        );
+        toggleMenu.classList.add("hidden");
+        closeMenu.classList.remove("hidden");
+      };
+
+      const CloseSidebar = () => {
+        dropdown.classList.add("hidden");
+        dropdown.classList.remove("scale-100");
+        toggleMenu.classList.remove("hidden");
+        closeMenu.classList.add("hidden");
+      };
+    </script>
   </body>
 </html>
