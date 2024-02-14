@@ -1,0 +1,786 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ignacio Poletti - Front-End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <style>
+    #about-img {
+      box-shadow: -43px -44px 0px -2px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: -43px -44px 0px -2px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -43px -44px 0px -2px rgba(0, 0, 0, 0.75);
+    }
+  </style>
+  <body
+    class="bg-neutral-900 lg:mx-24 bg-gradient-to-t from-black via-neutral-400 to-black"
+  >
+    <header
+      class="lg:grid grid-cols-[repeat(5,_1fr)] grid-rows-[repeat(1,_1fr)] gap-x-[0px] gap-y-[0px]"
+    >
+      <nav
+        class="hidden lg:inline [grid-area:1_/_3_/_2_/_6] text-white h-fit py-6 bg-neutral-700 drop-shadow-2xl"
+      >
+        <ul class="flex justify-between px-24 text-lg font-semibold">
+          <a
+            class="underline duration-150 underline-offset-4 decoration-neutral-700 hover:decoration-green-500 decoration-4"
+            href="#"
+          >
+            <li>HOME</li>
+          </a>
+          <a
+            class="underline duration-150 underline-offset-4 decoration-neutral-700 hover:decoration-green-500 decoration-4"
+            href="#about"
+            ><li>ABOUT ME</li></a
+          >
+          <a
+            class="underline duration-150 underline-offset-4 decoration-neutral-700 hover:decoration-green-500 decoration-4"
+            href="#projects"
+            ><li>PROJECTS</li></a
+          >
+          <a
+            class="underline duration-150 underline-offset-4 decoration-neutral-700 hover:decoration-green-500 decoration-4"
+            href="#contact"
+            ><li>CONTACT</li></a
+          >
+        </ul>
+      </nav>
+      <svg
+        class="hidden lg:inline absolute z-50 top-52 left-0 rotate-90 opacity-5"
+        width="483"
+        height="200"
+        viewBox="0 0 483 245"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="17.5" cy="227.5" r="17.5" fill="white" />
+        <circle cx="73.5" cy="227.5" r="17.5" fill="white" />
+        <circle cx="129.5" cy="227.5" r="17.5" fill="white" />
+        <circle cx="185.5" cy="227.5" r="17.5" fill="white" />
+        <circle cx="241.5" cy="227.5" r="17.5" fill="white" />
+        <circle cx="297.5" cy="227.5" r="17.5" fill="white" />
+        <circle cx="353.5" cy="227.5" r="17.5" fill="white" />
+        <circle cx="409.5" cy="227.5" r="17.5" fill="white" />
+        <circle cx="465.5" cy="227.5" r="17.5" fill="white" />
+        <circle cx="18" cy="175" r="15" fill="white" />
+        <circle cx="74" cy="175" r="15" fill="white" />
+        <circle cx="130" cy="175" r="15" fill="white" />
+        <circle cx="186" cy="175" r="15" fill="white" />
+        <circle cx="242" cy="175" r="15" fill="white" />
+        <circle cx="298" cy="175" r="15" fill="white" />
+        <circle cx="354" cy="175" r="15" fill="white" />
+        <circle cx="410" cy="175" r="15" fill="white" />
+        <circle cx="466" cy="175" r="15" fill="white" />
+        <circle cx="17.5" cy="127.5" r="12.5" fill="white" />
+        <circle cx="73.5" cy="127.5" r="12.5" fill="white" />
+        <circle cx="129.5" cy="127.5" r="12.5" fill="white" />
+        <circle cx="185.5" cy="127.5" r="12.5" fill="white" />
+        <circle cx="241.5" cy="127.5" r="12.5" fill="white" />
+        <circle cx="297.5" cy="127.5" r="12.5" fill="white" />
+        <circle cx="353.5" cy="127.5" r="12.5" fill="white" />
+        <circle cx="409.5" cy="127.5" r="12.5" fill="white" />
+        <circle cx="465.5" cy="127.5" r="12.5" fill="white" />
+        <circle cx="18" cy="85" r="10" fill="white" />
+        <circle cx="74" cy="85" r="10" fill="white" />
+        <circle cx="130" cy="85" r="10" fill="white" />
+        <circle cx="186" cy="85" r="10" fill="white" />
+        <circle cx="242" cy="85" r="10" fill="white" />
+        <circle cx="298" cy="85" r="10" fill="white" />
+        <circle cx="354" cy="85" r="10" fill="white" />
+        <circle cx="410" cy="85" r="10" fill="white" />
+        <circle cx="466" cy="85" r="10" fill="white" />
+        <circle cx="17.5" cy="42.5" r="7.5" fill="white" />
+        <circle cx="73.5" cy="42.5" r="7.5" fill="white" />
+        <circle cx="129.5" cy="42.5" r="7.5" fill="white" />
+        <circle cx="185.5" cy="42.5" r="7.5" fill="white" />
+        <circle cx="241.5" cy="42.5" r="7.5" fill="white" />
+        <circle cx="297.5" cy="42.5" r="7.5" fill="white" />
+        <circle cx="353.5" cy="42.5" r="7.5" fill="white" />
+        <circle cx="409.5" cy="42.5" r="7.5" fill="white" />
+        <circle cx="465.5" cy="42.5" r="7.5" fill="white" />
+        <circle cx="18" cy="5" r="5" fill="white" />
+        <circle cx="74" cy="5" r="5" fill="white" />
+        <circle cx="130" cy="5" r="5" fill="white" />
+        <circle cx="186" cy="5" r="5" fill="white" />
+        <circle cx="242" cy="5" r="5" fill="white" />
+        <circle cx="298" cy="5" r="5" fill="white" />
+        <circle cx="354" cy="5" r="5" fill="white" />
+        <circle cx="410" cy="5" r="5" fill="white" />
+        <circle cx="466" cy="5" r="5" fill="white" />
+      </svg>
+      <div
+        class="hidden [grid-area:1_/_1_/_6_/_3] lg:flex flex-col justify-between items-center bg-neutral-900 drop-shadow-2xl"
+      >
+        <h2
+          class="hidden lg:inline uppercase text-white font-bold text-3xl my-4"
+        >
+          Portfolio
+        </h2>
+        <div class="z-50 font-bold uppercase mb-36">
+          <h2 class="text-white text-3xl">My name is</h2>
+          <h1 class="text-white text-6xl">Ignacio Poletti</h1>
+          <h3 class="bg-green-500 text-2xl text-center w-fit px-4">
+            I'm a Front-End Developer
+          </h3>
+          <div class="flex gap-2 mt-4 items-center">
+            <a href="https://github.com/MustaCH" target="_blank"
+              ><img
+                class="w-6"
+                src="./img/github-logo-white.png"
+                alt="github-logo-white"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/ignaciopoletti/"
+              target="_blank"
+              ><img class="w-6" src="./img/linkedinlogo.png" alt="linkedinlogo"
+            /></a>
+            <a href="mailto:polettiignacio7@gmail.com"
+              ><img class="w-7" src="./img/email.png" alt="email"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="[grid-area:2_/_3_/_6_/_6] bg-[url('./img/header-img-gray.jpg')] lg:grayscale bg-cover bg-center h-lvh"
+      >
+        <div class="lg:hidden flex flex-col items-center">
+          <h2 class="uppercase text-white font-bold text-3xl py-4">
+            Portfolio
+          </h2>
+          <div class="z-50 font-bold uppercase mt-80">
+            <h2 class="text-white text-xl lg:text-3xl">My name is</h2>
+            <h1 class="text-white text-4xl lg:text-6xl">Ignacio Poletti</h1>
+            <h3 class="bg-green-500 text-lg lg:text-2xl text-center w-fit px-4">
+              I'm a Front-End Developer
+            </h3>
+            <div class="flex gap-2 items-center mt-24">
+              <a href="https://github.com/MustaCH" target="_blank"
+                ><img
+                  class="w-6"
+                  src="./img/github-logo-white.png"
+                  alt="github-logo-white"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/ignaciopoletti/"
+                target="_blank"
+                ><img
+                  class="w-6"
+                  src="./img/linkedinlogo.png"
+                  alt="linkedinlogo"
+              /></a>
+              <a href="mailto:polettiignacio7@gmail.com"
+                ><img class="w-7" src="./img/email.png" alt="email"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section
+      id="about"
+      class="flex flex-col lg:flex-row lg:justify-center items-center bg-neutral-300 h-fit lg:h-screen text-black"
+    >
+      <div class="relative hidden lg:inline lg:mt-0">
+        <div
+          class="absolute right-80 top-[-3%] z-50 w-10 h-10 border-green-500 border-8 rounded-full drop-shadow-2xl"
+        ></div>
+        <div
+          class="absolute right-72 top-[-2%] z-50 w-5 h-5 bg-green-500 rounded-full drop-shadow-2xl"
+        ></div>
+        <img
+          id="about-img"
+          class="relative grayscale w-[80%] z-20"
+          src="./img/about.JPG"
+          alt=""
+        />
+      </div>
+      <div class="relative my-16 lg:my-0">
+        <div class="relative w-80">
+          <svg
+            class="hidden lg:inline absolute right-[-10%] lg:right-[-30%] opacity-25"
+            width="220"
+            height="84"
+            viewBox="0 0 907 84"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="2.45655"
+              y1="64.0333"
+              x2="81.4566"
+              y2="2.03334"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="78.6141"
+              y1="2.09093"
+              x2="155.301"
+              y2="66.9304"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="152.457"
+              y1="67.0333"
+              x2="231.457"
+              y2="5.03334"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="228.611"
+              y1="5.08852"
+              x2="305.395"
+              y2="69.8135"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="302.457"
+              y1="70.0333"
+              x2="381.457"
+              y2="8.03334"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="378.614"
+              y1="8.09093"
+              x2="455.301"
+              y2="72.9304"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="452.457"
+              y1="73.0333"
+              x2="531.457"
+              y2="11.0333"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="528.611"
+              y1="11.0885"
+              x2="605.395"
+              y2="75.8135"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="602.457"
+              y1="76.0333"
+              x2="681.457"
+              y2="14.0333"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="678.614"
+              y1="14.0909"
+              x2="755.301"
+              y2="78.9304"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="752.457"
+              y1="79.0333"
+              x2="831.457"
+              y2="17.0333"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="828.611"
+              y1="17.0885"
+              x2="905.395"
+              y2="81.8135"
+              stroke="#525252"
+              stroke-width="5"
+            />
+          </svg>
+          <svg
+            class="hidden lg:inline absolute lg:right-[-30%] lg:top-[-10%] opacity-25"
+            width="220"
+            height="84"
+            viewBox="0 0 907 84"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="2.45655"
+              y1="64.0333"
+              x2="81.4566"
+              y2="2.03334"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="78.6141"
+              y1="2.09093"
+              x2="155.301"
+              y2="66.9304"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="152.457"
+              y1="67.0333"
+              x2="231.457"
+              y2="5.03334"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="228.611"
+              y1="5.08852"
+              x2="305.395"
+              y2="69.8135"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="302.457"
+              y1="70.0333"
+              x2="381.457"
+              y2="8.03334"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="378.614"
+              y1="8.09093"
+              x2="455.301"
+              y2="72.9304"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="452.457"
+              y1="73.0333"
+              x2="531.457"
+              y2="11.0333"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="528.611"
+              y1="11.0885"
+              x2="605.395"
+              y2="75.8135"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="602.457"
+              y1="76.0333"
+              x2="681.457"
+              y2="14.0333"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="678.614"
+              y1="14.0909"
+              x2="755.301"
+              y2="78.9304"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="752.457"
+              y1="79.0333"
+              x2="831.457"
+              y2="17.0333"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="828.611"
+              y1="17.0885"
+              x2="905.395"
+              y2="81.8135"
+              stroke="#525252"
+              stroke-width="5"
+            />
+          </svg>
+          <svg
+            class="hidden lg:inline absolute right-[-30%] top-[-20%] opacity-25"
+            width="220"
+            height="84"
+            viewBox="0 0 907 84"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="2.45655"
+              y1="64.0333"
+              x2="81.4566"
+              y2="2.03334"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="78.6141"
+              y1="2.09093"
+              x2="155.301"
+              y2="66.9304"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="152.457"
+              y1="67.0333"
+              x2="231.457"
+              y2="5.03334"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="228.611"
+              y1="5.08852"
+              x2="305.395"
+              y2="69.8135"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="302.457"
+              y1="70.0333"
+              x2="381.457"
+              y2="8.03334"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="378.614"
+              y1="8.09093"
+              x2="455.301"
+              y2="72.9304"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="452.457"
+              y1="73.0333"
+              x2="531.457"
+              y2="11.0333"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="528.611"
+              y1="11.0885"
+              x2="605.395"
+              y2="75.8135"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="602.457"
+              y1="76.0333"
+              x2="681.457"
+              y2="14.0333"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="678.614"
+              y1="14.0909"
+              x2="755.301"
+              y2="78.9304"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="752.457"
+              y1="79.0333"
+              x2="831.457"
+              y2="17.0333"
+              stroke="#525252"
+              stroke-width="5"
+            />
+            <line
+              x1="828.611"
+              y1="17.0885"
+              x2="905.395"
+              y2="81.8135"
+              stroke="#525252"
+              stroke-width="5"
+            />
+          </svg>
+          <div class="absolute z-10 top-11 left-5 w-36 h-5 bg-green-500"></div>
+          <h2 class="text-left font-semibold">who am i?</h2>
+          <h3 class="relative z-50 text-5xl font-black">HELLO</h3>
+          <p class="text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            praesentium consequatur id modi! Nemo necessitatibus error,
+            repudiandae obcaecati facere nesciunt dolore repellendus doloribus
+            optio laborum beatae corporis culpa laboriosam, veritatis nulla
+            magni, nihil rem. Deleniti ipsum in praesentium laborum? Explicabo
+            velit laudantium iste modi quasi voluptatum obcaecati rem laborum
+            vitae.
+          </p>
+        </div>
+        <div class="mt-6">
+          <h3 class="text-2xl font-bold uppercase">My Technology Stack</h3>
+          <div class="flex justify-between">
+            <img class="w-7" src="./img/techs/html-logo.png" alt="html-logo" />
+            <img class="w-7" src="./img/techs/css-logo.png" alt="css-logo" />
+            <img
+              class="w-7"
+              src="./img/techs/tailwindcss-logo.png"
+              alt="tailwindcss-logo"
+            />
+            <img
+              class="w-7"
+              src="./img/techs/javascript-logo.png"
+              alt="javascript-logo"
+            />
+            <img
+              class="w-7"
+              src="./img/techs/react-logo.png"
+              alt="react-logo"
+            />
+            <img
+              class="w-7"
+              src="./img/techs/nodejs-logo.png"
+              alt="nodejs-logo"
+            />
+            <img
+              class="w-7"
+              src="./img/techs/firebase-logo.png"
+              alt="firebase-logo"
+            />
+          </div>
+        </div>
+        <svg
+          class="hidden lg:inline absolute left-[-250%] bottom-[-60%] opacity-25 z-10"
+          width="483"
+          height="245"
+          viewBox="0 0 483 245"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="17.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+          <circle cx="73.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+          <circle cx="129.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+          <circle cx="185.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+          <circle cx="241.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+          <circle cx="297.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+          <circle cx="353.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+          <circle cx="409.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+          <circle cx="465.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+          <circle cx="18" cy="175" r="15" fill="#1E1E1E" />
+          <circle cx="74" cy="175" r="15" fill="#1E1E1E" />
+          <circle cx="130" cy="175" r="15" fill="#1E1E1E" />
+          <circle cx="186" cy="175" r="15" fill="#1E1E1E" />
+          <circle cx="242" cy="175" r="15" fill="#1E1E1E" />
+          <circle cx="298" cy="175" r="15" fill="#1E1E1E" />
+          <circle cx="354" cy="175" r="15" fill="#1E1E1E" />
+          <circle cx="410" cy="175" r="15" fill="#1E1E1E" />
+          <circle cx="466" cy="175" r="15" fill="#1E1E1E" />
+          <circle cx="17.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+          <circle cx="73.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+          <circle cx="129.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+          <circle cx="185.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+          <circle cx="241.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+          <circle cx="297.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+          <circle cx="353.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+          <circle cx="409.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+          <circle cx="465.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+          <circle cx="18" cy="85" r="10" fill="#1E1E1E" />
+          <circle cx="74" cy="85" r="10" fill="#1E1E1E" />
+          <circle cx="130" cy="85" r="10" fill="#1E1E1E" />
+          <circle cx="186" cy="85" r="10" fill="#1E1E1E" />
+          <circle cx="242" cy="85" r="10" fill="#1E1E1E" />
+          <circle cx="298" cy="85" r="10" fill="#1E1E1E" />
+          <circle cx="354" cy="85" r="10" fill="#1E1E1E" />
+          <circle cx="410" cy="85" r="10" fill="#1E1E1E" />
+          <circle cx="466" cy="85" r="10" fill="#1E1E1E" />
+          <circle cx="17.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+          <circle cx="73.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+          <circle cx="129.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+          <circle cx="185.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+          <circle cx="241.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+          <circle cx="297.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+          <circle cx="353.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+          <circle cx="409.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+          <circle cx="465.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+          <circle cx="18" cy="5" r="5" fill="#1E1E1E" />
+          <circle cx="74" cy="5" r="5" fill="#1E1E1E" />
+          <circle cx="130" cy="5" r="5" fill="#1E1E1E" />
+          <circle cx="186" cy="5" r="5" fill="#1E1E1E" />
+          <circle cx="242" cy="5" r="5" fill="#1E1E1E" />
+          <circle cx="298" cy="5" r="5" fill="#1E1E1E" />
+          <circle cx="354" cy="5" r="5" fill="#1E1E1E" />
+          <circle cx="410" cy="5" r="5" fill="#1E1E1E" />
+          <circle cx="466" cy="5" r="5" fill="#1E1E1E" />
+        </svg>
+      </div>
+    </section>
+    <section id="projects" class="bg-gray-200 h-fit py-16 lg:py-32">
+      <div class="relative flex flex-col items-center uppercase mb-12">
+        <div class="absolute z-10 top-11 w-52 h-5 bg-green-500"></div>
+        <div
+          class="absolute right-[10%] lg:right-[40%] lg:top-[-3%] z-50 w-10 h-10 border-green-500 border-8 rounded-full drop-shadow-2xl"
+        ></div>
+        <div
+          class="absolute right-[5%] lg:right-[38%] lg:top-[-3%] z-50 w-2 h-2 border-green-700 border-8 rounded-full drop-shadow-2xl"
+        ></div>
+        <h3 class="text-xl font-semibold ms-20">My latest</h3>
+        <h2 class="relative z-50 text-5xl font-black">Projects</h2>
+        <p
+          class="text-xs lg:text-sm font-light lg:font-extralight px-4 mt-4 lg:mt-0 lg:px-0"
+        >
+          These are my most recent projects, you can find more projects at
+          <a
+            class="underline font-semibold"
+            href="https://github.com/MustaCH"
+            target="_blank"
+            >GitHub</a
+          >
+        </p>
+      </div>
+      <div
+        class="flex flex-col lg:flex-row items-center lg:justify-center gap-2"
+      >
+        <div>
+          <img class="w-72" src="./img/projects/nxbostore.png" alt="" />
+        </div>
+        <div><img class="w-72" src="./img/projects/sbscms.png" alt="" /></div>
+        <div><img class="w-72" src="./img/projects/sbslink.png" alt="" /></div>
+      </div>
+      <div class="flex flex-col items-center mt-12">
+        <a href="https://github.com/MustaCH" target="_blank">
+          <button
+            class="flex flex-col items-center underline underline-offset-8 hover:underline-offset-4 duration-150 decoration-green-500 decoration-4 uppercase font-bold group"
+          >
+            More projects
+          </button>
+        </a>
+      </div>
+      <svg
+        class="hidden lg:inline absolute rotate-90 left-0 opacity-25 z-10"
+        width="483"
+        height="245"
+        viewBox="0 0 483 245"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="17.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+        <circle cx="73.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+        <circle cx="129.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+        <circle cx="185.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+        <circle cx="241.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+        <circle cx="297.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+        <circle cx="353.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+        <circle cx="409.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+        <circle cx="465.5" cy="227.5" r="17.5" fill="#1E1E1E" />
+        <circle cx="18" cy="175" r="15" fill="#1E1E1E" />
+        <circle cx="74" cy="175" r="15" fill="#1E1E1E" />
+        <circle cx="130" cy="175" r="15" fill="#1E1E1E" />
+        <circle cx="186" cy="175" r="15" fill="#1E1E1E" />
+        <circle cx="242" cy="175" r="15" fill="#1E1E1E" />
+        <circle cx="298" cy="175" r="15" fill="#1E1E1E" />
+        <circle cx="354" cy="175" r="15" fill="#1E1E1E" />
+        <circle cx="410" cy="175" r="15" fill="#1E1E1E" />
+        <circle cx="466" cy="175" r="15" fill="#1E1E1E" />
+        <circle cx="17.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+        <circle cx="73.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+        <circle cx="129.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+        <circle cx="185.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+        <circle cx="241.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+        <circle cx="297.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+        <circle cx="353.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+        <circle cx="409.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+        <circle cx="465.5" cy="127.5" r="12.5" fill="#1E1E1E" />
+        <circle cx="18" cy="85" r="10" fill="#1E1E1E" />
+        <circle cx="74" cy="85" r="10" fill="#1E1E1E" />
+        <circle cx="130" cy="85" r="10" fill="#1E1E1E" />
+        <circle cx="186" cy="85" r="10" fill="#1E1E1E" />
+        <circle cx="242" cy="85" r="10" fill="#1E1E1E" />
+        <circle cx="298" cy="85" r="10" fill="#1E1E1E" />
+        <circle cx="354" cy="85" r="10" fill="#1E1E1E" />
+        <circle cx="410" cy="85" r="10" fill="#1E1E1E" />
+        <circle cx="466" cy="85" r="10" fill="#1E1E1E" />
+        <circle cx="17.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+        <circle cx="73.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+        <circle cx="129.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+        <circle cx="185.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+        <circle cx="241.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+        <circle cx="297.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+        <circle cx="353.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+        <circle cx="409.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+        <circle cx="465.5" cy="42.5" r="7.5" fill="#1E1E1E" />
+        <circle cx="18" cy="5" r="5" fill="#1E1E1E" />
+        <circle cx="74" cy="5" r="5" fill="#1E1E1E" />
+        <circle cx="130" cy="5" r="5" fill="#1E1E1E" />
+        <circle cx="186" cy="5" r="5" fill="#1E1E1E" />
+        <circle cx="242" cy="5" r="5" fill="#1E1E1E" />
+        <circle cx="298" cy="5" r="5" fill="#1E1E1E" />
+        <circle cx="354" cy="5" r="5" fill="#1E1E1E" />
+        <circle cx="410" cy="5" r="5" fill="#1E1E1E" />
+        <circle cx="466" cy="5" r="5" fill="#1E1E1E" />
+      </svg>
+    </section>
+    <section id="contact" class="relative z-30 bg-neutral-900 py-24">
+      <div class="relative flex flex-col items-center">
+        <div
+          class="absolute left-[10%] lg:left-[40%] lg:top-[-3%] z-50 w-10 h-10 bg-green-500 rounded-full drop-shadow-2xl"
+        ></div>
+        <div
+          class="absolute right-[18%] lg:right-[40%] lg:top-[20%] z-50 w-2 h-2 border-green-700 border-8 rounded-full drop-shadow-2xl"
+        ></div>
+        <div
+          class="absolute right-[5%] top-[20%] lg:right-[41%] lg:top-[10%] z-50 w-5 h-5 border-green-700 border-4 rounded-full drop-shadow-2xl"
+        ></div>
+        <p class="relative z-20 text-white">Have a project in mind?</p>
+        <h2 class="relative z-20 text-white text-4xl uppercase">Let's talk!</h2>
+        <div class="mt-20">
+          <a
+            class="text-green-500 underline underline-offset-2 decoration-2"
+            href="mailto:polettiignacio7@gmail.com"
+            >polettiignacio7@gmail.com</a
+          >
+        </div>
+        <div class="flex gap-6 mt-4 items-center">
+          <a href="https://github.com/MustaCH" target="_blank"
+            ><img
+              class="w-6"
+              src="./img/github-logo-white.png"
+              alt="github-logo-white"
+          /></a>
+          <a href="https://www.linkedin.com/in/ignaciopoletti/" target="_blank"
+            ><img class="w-6" src="./img/linkedinlogo.png" alt="linkedinlogo"
+          /></a>
+          <a href="mailto:polettiignacio7@gmail.com"
+            ><img class="w-7" src="./img/email.png" alt="email"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <footer class="flex justify-center bg-neutral-900 pt-24 pb-12">
+      <p
+        class="text-white text-xs font-light text-center lg:text-left px-4 lg:px-0"
+      >
+        Programmed by me in Visual Studio Code in HTML, CSS, JavaScript,
+        Tailwind CSS. Designed by
+        <a class="underline underline-offset-4 text-green-500" href=""
+          >Naiara Michelle</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
