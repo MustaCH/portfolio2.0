@@ -12,13 +12,162 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
-    <link href="./output.css" rel="stylesheet" />
+    <link href="./src/output.css" rel="stylesheet" />
   </head>
   <style>
     #about-img {
       box-shadow: -43px -44px 0px -2px rgba(0, 0, 0, 0.75);
       -webkit-box-shadow: -43px -44px 0px -2px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: -43px -44px 0px -2px rgba(0, 0, 0, 0.75);
+    }
+
+    .slide-in-blurred-left {
+      -webkit-animation: slide-in-blurred-left 1.5s
+        cubic-bezier(0.23, 1, 0.32, 1) both;
+      animation: slide-in-blurred-left 1.5s cubic-bezier(0.23, 1, 0.32, 1) both;
+    }
+
+    .slide-in-blurred-left-2 {
+      -webkit-animation: slide-in-blurred-left 2s cubic-bezier(0.23, 1, 0.32, 1)
+        both;
+      animation: slide-in-blurred-left 2s cubic-bezier(0.23, 1, 0.32, 1) both;
+    }
+
+    @-webkit-keyframes slide-in-blurred-left {
+      0% {
+        -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+        transform: translateX(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+      }
+    }
+    @keyframes slide-in-blurred-left {
+      0% {
+        -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+        transform: translateX(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+      }
+    }
+
+    .flip-in-hor-bottom {
+      -webkit-animation: flip-in-hor-bottom 0.5s
+        cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.2s both;
+      animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        1.2s both;
+    }
+
+    @-webkit-keyframes flip-in-hor-bottom {
+      0% {
+        -webkit-transform: rotateX(80deg);
+        transform: rotateX(80deg);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes flip-in-hor-bottom {
+      0% {
+        -webkit-transform: rotateX(80deg);
+        transform: rotateX(80deg);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+        opacity: 1;
+      }
+    }
+
+    .shake-horizontal {
+      -webkit-animation: shake-horizontal 50s
+        cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+      animation: shake-horizontal 50s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+        both;
+    }
+
+    @-webkit-keyframes shake-horizontal {
+      0%,
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+      10%,
+      30%,
+      50%,
+      70% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+      }
+      20%,
+      40%,
+      60% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+      }
+      80% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+      }
+      90% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+      }
+    }
+    @keyframes shake-horizontal {
+      0%,
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+      10%,
+      30%,
+      50%,
+      70% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+      }
+      20%,
+      40%,
+      60% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+      }
+      80% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+      }
+      90% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+      }
     }
   </style>
   <body
@@ -70,7 +219,7 @@
       </div>
       <nav
         id="dropdown"
-        class="hidden absolute left-10 top-12 lg:hidden text-white h-fit backdrop-blur-lg rounded-lg py-6 drop-shadow-2xl transform scale-0 origin-top-right"
+        class="absolute left-10 top-12 lg:hidden text-white h-fit backdrop-blur-lg rounded-lg py-6 drop-shadow-2xl transform scale-0 origin-top-right"
       >
         <div class="">
           <ul
@@ -81,7 +230,7 @@
             </a>
             <a href="#about"><li>ABOUT ME</li></a>
             <a href="#projects"><li>PROJECTS</li></a>
-            <a href="#contact"><li>CONTACT</li></a>
+            <a class="text-green-500" href="#contact"><li>CONTACT</li></a>
           </ul>
         </div>
       </nav>
@@ -176,31 +325,38 @@
         <circle cx="466" cy="5" r="5" fill="white" />
       </svg>
       <div
-        class="hidden [grid-area:1_/_1_/_6_/_3] lg:flex flex-col justify-between items-center bg-neutral-900 drop-shadow-2xl"
+        class="hidden [grid-area:1_/_1_/_6_/_3] lg:flex flex-col justify-between items-center bg-neutral-900 drop-shadow-2xl overflow-x-hidden"
       >
         <h2 class="lg:inline uppercase text-white font-bold text-3xl my-4">
           Portfolio
         </h2>
         <div class="z-50 font-bold uppercase mb-36">
-          <h2 class="text-white text-3xl">My name is</h2>
-          <h1 class="text-white text-6xl">Ignacio Poletti</h1>
-          <h3 class="bg-green-500 text-2xl text-center w-fit px-4">
+          <h2 class="text-white text-3xl slide-in-blurred-left">My name is</h2>
+          <h1 class="text-white text-6xl slide-in-blurred-left-2">
+            Ignacio Poletti
+          </h1>
+          <h3
+            class="bg-green-500 text-2xl text-center w-fit px-4 flip-in-hor-bottom"
+          >
             I'm a Front-End Developer
           </h3>
           <div class="flex gap-2 mt-4 items-center">
             <a href="https://github.com/MustaCH" target="_blank"
               ><img
                 class="w-6"
-                src="./img/github-logo-white.png"
+                src="./src/img/github-logo-white.png"
                 alt="github-logo-white"
             /></a>
             <a
               href="https://www.linkedin.com/in/ignaciopoletti/"
               target="_blank"
-              ><img class="w-6" src="./img/linkedinlogo.png" alt="linkedinlogo"
+              ><img
+                class="w-6"
+                src="./src/img/linkedinlogo.png"
+                alt="linkedinlogo"
             /></a>
             <a href="mailto:polettiignacio7@gmail.com"
-              ><img class="w-7" src="./img/email.png" alt="email"
+              ><img class="w-7" src="./src/img/email.png" alt="email"
             /></a>
           </div>
         </div>
@@ -210,16 +366,22 @@
       >
         <div class="lg:hidden flex flex-col items-center">
           <div class="z-50 font-bold uppercase mt-80">
-            <h2 class="text-white text-xl lg:text-3xl">My name is</h2>
-            <h1 class="text-white text-4xl lg:text-6xl">Ignacio Poletti</h1>
-            <h3 class="bg-green-500 text-lg lg:text-2xl text-center w-fit px-4">
+            <h2 class="text-white text-xl lg:text-3xl slide-in-blurred-left">
+              My name is
+            </h2>
+            <h1 class="text-white text-4xl lg:text-6xl slide-in-blurred-left-2">
+              Ignacio Poletti
+            </h1>
+            <h3
+              class="bg-green-500 text-lg lg:text-2xl text-center w-fit px-4 flip-in-hor-bottom"
+            >
               I'm a Front-End Developer
             </h3>
             <div class="flex gap-2 items-center mt-24">
               <a href="https://github.com/MustaCH" target="_blank"
                 ><img
                   class="w-6"
-                  src="./img/github-logo-white.png"
+                  src="./src/img/github-logo-white.png"
                   alt="github-logo-white"
               /></a>
               <a
@@ -227,11 +389,11 @@
                 target="_blank"
                 ><img
                   class="w-6"
-                  src="./img/linkedinlogo.png"
+                  src="./src/img/linkedinlogo.png"
                   alt="linkedinlogo"
               /></a>
               <a href="mailto:polettiignacio7@gmail.com"
-                ><img class="w-7" src="./img/email.png" alt="email"
+                ><img class="w-7" src="./src/img/email.png" alt="email"
               /></a>
             </div>
           </div>
@@ -252,7 +414,7 @@
         <img
           id="about-img"
           class="relative grayscale w-[80%] z-20"
-          src="./img/about.JPG"
+          src="./src/img/about.JPG"
           alt=""
         />
       </div>
@@ -573,7 +735,9 @@
               stroke-width="5"
             />
           </svg>
-          <div class="absolute z-10 top-11 left-5 w-36 h-5 bg-green-500"></div>
+          <div
+            class="absolute z-10 top-11 left-5 w-36 h-5 bg-green-500 shake-horizontal"
+          ></div>
           <h2 class="text-left font-semibold">who am i?</h2>
           <h3 class="relative z-50 text-5xl font-black">HELLO</h3>
           <p class="text-sm">
@@ -589,31 +753,39 @@
         <div class="mt-6">
           <h3 class="text-2xl font-bold uppercase">My Technology Stack</h3>
           <div class="flex justify-between">
-            <img class="w-7" src="./img/techs/html-logo.png" alt="html-logo" />
-            <img class="w-7" src="./img/techs/css-logo.png" alt="css-logo" />
             <img
               class="w-7"
-              src="./img/techs/tailwindcss-logo.png"
+              src="./src/img/techs/html-logo.png"
+              alt="html-logo"
+            />
+            <img
+              class="w-7"
+              src="./src/img/techs/css-logo.png"
+              alt="css-logo"
+            />
+            <img
+              class="w-7"
+              src="./src/img/techs/tailwindcss-logo.png"
               alt="tailwindcss-logo"
             />
             <img
               class="w-7"
-              src="./img/techs/javascript-logo.png"
+              src="./src/img/techs/javascript-logo.png"
               alt="javascript-logo"
             />
             <img
               class="w-7"
-              src="./img/techs/react-logo.png"
+              src="./src/img/techs/react-logo.png"
               alt="react-logo"
             />
             <img
               class="w-7"
-              src="./img/techs/nodejs-logo.png"
+              src="./src/img/techs/nodejs-logo.png"
               alt="nodejs-logo"
             />
             <img
               class="w-7"
-              src="./img/techs/firebase-logo.png"
+              src="./src/img/techs/firebase-logo.png"
               alt="firebase-logo"
             />
           </div>
@@ -710,10 +882,14 @@
         class="flex flex-col lg:flex-row items-center lg:justify-center gap-2"
       >
         <div>
-          <img class="w-72" src="./img/projects/nxbostore.png" alt="" />
+          <img class="w-72" src="./src/img/projects/nxbostore.png" alt="" />
         </div>
-        <div><img class="w-72" src="./img/projects/sbscms.png" alt="" /></div>
-        <div><img class="w-72" src="./img/projects/sbslink.png" alt="" /></div>
+        <div>
+          <img class="w-72" src="./src/img/projects/sbscms.png" alt="" />
+        </div>
+        <div>
+          <img class="w-72" src="./src/img/projects/sbslink.png" alt="" />
+        </div>
       </div>
       <div class="flex flex-col items-center mt-12">
         <a href="https://github.com/MustaCH" target="_blank">
@@ -812,14 +988,17 @@
           <a href="https://github.com/MustaCH" target="_blank"
             ><img
               class="w-6"
-              src="./img/github-logo-white.png"
+              src="./src/img/github-logo-white.png"
               alt="github-logo-white"
           /></a>
           <a href="https://www.linkedin.com/in/ignaciopoletti/" target="_blank"
-            ><img class="w-6" src="./img/linkedinlogo.png" alt="linkedinlogo"
+            ><img
+              class="w-6"
+              src="./src/img/linkedinlogo.png"
+              alt="linkedinlogo"
           /></a>
           <a href="mailto:polettiignacio7@gmail.com"
-            ><img class="w-7" src="./img/email.png" alt="email"
+            ><img class="w-7" src="./src/img/email.png" alt="email"
           /></a>
         </div>
       </div>
@@ -841,20 +1020,22 @@
       let closeMenu = document.querySelector("#close-menu");
 
       const OpenSidebar = () => {
-        dropdown.classList.remove("hidden");
         dropdown.classList.add(
           "scale-100",
           "transition-transform",
           "duration-150",
         );
-        toggleMenu.classList.add("hidden");
+        toggleMenu.classList.add(
+          "opacity-0",
+          "transition-opacity",
+          "duration-150",
+        );
         closeMenu.classList.remove("hidden");
       };
 
       const CloseSidebar = () => {
-        dropdown.classList.add("hidden");
         dropdown.classList.remove("scale-100");
-        toggleMenu.classList.remove("hidden");
+        toggleMenu.classList.remove("opacity-0");
         closeMenu.classList.add("hidden");
       };
     </script>
