@@ -108,9 +108,9 @@
 
     .shake-horizontal {
       -webkit-animation: shake-horizontal 50s
-        cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+        cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
       animation: shake-horizontal 50s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-        both;
+        infinite both;
     }
 
     @-webkit-keyframes shake-horizontal {
@@ -857,7 +857,9 @@
     </section>
     <section id="projects" class="bg-gray-200 h-fit py-16 lg:py-32">
       <div class="relative flex flex-col items-center uppercase mb-12">
-        <div class="absolute z-10 top-11 w-52 h-5 bg-green-500"></div>
+        <div
+          class="absolute z-10 top-11 w-52 h-5 bg-green-500 shake-horizontal"
+        ></div>
         <div
           class="absolute right-[10%] lg:right-[40%] lg:top-[-3%] z-50 w-10 h-10 border-green-500 border-8 rounded-full drop-shadow-2xl"
         ></div>
