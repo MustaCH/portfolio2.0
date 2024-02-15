@@ -171,7 +171,7 @@
     }
   </style>
   <body
-    class="bg-neutral-900 lg:mx-24 bg-gradient-to-t from-black via-neutral-400 to-black"
+    class="lg:mx-24 bg-gradient-to-t from-neutral-600 via-neutral-400 to-neutral-600 drop-shadow-2xl"
   >
     <header
       class="relative lg:grid grid-cols-[repeat(5,_1fr)] grid-rows-[repeat(1,_1fr)] gap-x-[0px] gap-y-[0px]"
@@ -230,12 +230,12 @@
             </a>
             <a href="#about"><li>ABOUT ME</li></a>
             <a href="#projects"><li>PROJECTS</li></a>
-            <a class="text-green-500" href="#contact"><li>CONTACT</li></a>
+            <a class="text-green-500" href="#contact"><li>LET'S TALK!</li></a>
           </ul>
         </div>
       </nav>
       <nav
-        class="hidden lg:inline [grid-area:1_/_3_/_2_/_6] text-white h-fit py-6 bg-neutral-700 drop-shadow-2xl"
+        class="hidden lg:inline [grid-area:1_/_3_/_2_/_6] text-white h-fit py-6 bg-neutral-700 backdrop-blur-2xl drop-shadow-2xl"
       >
         <ul class="flex justify-between px-24 text-lg font-semibold">
           <a
@@ -255,9 +255,9 @@
             ><li>PROJECTS</li></a
           >
           <a
-            class="underline duration-150 underline-offset-4 decoration-neutral-700 hover:decoration-green-500 decoration-4"
+            class="underline duration-150 underline-offset-4 decoration-neutral-700 hover:decoration-green-500 text-green-500 decoration-4"
             href="#contact"
-            ><li>CONTACT</li></a
+            ><li>LET'S TALK!</li></a
           >
         </ul>
       </nav>
@@ -340,14 +340,18 @@
           >
             I'm a Front-End Developer
           </h3>
-          <div class="flex gap-2 mt-4 items-center">
-            <a href="https://github.com/MustaCH" target="_blank"
+          <div class="flex gap-4 mt-4 items-center">
+            <a
+              class="hover:scale-110 transition-transform duration-150"
+              href="https://github.com/MustaCH"
+              target="_blank"
               ><img
                 class="w-6"
                 src="./src/img/github-logo-white.png"
                 alt="github-logo-white"
             /></a>
             <a
+              class="hover:scale-110 transition-transform duration-150"
               href="https://www.linkedin.com/in/ignaciopoletti/"
               target="_blank"
               ><img
@@ -355,7 +359,9 @@
                 src="./src/img/linkedinlogo.png"
                 alt="linkedinlogo"
             /></a>
-            <a href="mailto:polettiignacio7@gmail.com"
+            <a
+              class="hover:scale-110 transition-transform duration-150"
+              href="mailto:polettiignacio7@gmail.com"
               ><img class="w-7" src="./src/img/email.png" alt="email"
             /></a>
           </div>
@@ -741,13 +747,13 @@
           <h2 class="text-left font-semibold">who am i?</h2>
           <h3 class="relative z-50 text-5xl font-black">HELLO</h3>
           <p class="text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-            praesentium consequatur id modi! Nemo necessitatibus error,
-            repudiandae obcaecati facere nesciunt dolore repellendus doloribus
-            optio laborum beatae corporis culpa laboriosam, veritatis nulla
-            magni, nihil rem. Deleniti ipsum in praesentium laborum? Explicabo
-            velit laudantium iste modi quasi voluptatum obcaecati rem laborum
-            vitae.
+            I am a person with a very active mind, I am always on the move and
+            always thinking about how to improve myself on a personal level in
+            all aspects. I really enjoy working in a team and supporting each
+            other with my colleagues to push us to give better results. I
+            believe that learning, especially in this field, is something
+            constant, there are always new things to learn and different ways to
+            solve a problem, we just need to be open to the possibilities.
           </p>
         </div>
         <div class="mt-6">
@@ -856,7 +862,7 @@
       </div>
     </section>
     <section id="projects" class="bg-gray-200 h-fit py-16 lg:py-32">
-      <div class="relative flex flex-col items-center uppercase mb-12">
+      <div class="relative flex flex-col items-center mb-12">
         <div
           class="absolute z-10 top-11 w-52 h-5 bg-green-500 shake-horizontal"
         ></div>
@@ -866,8 +872,8 @@
         <div
           class="absolute right-[5%] lg:right-[38%] lg:top-[-3%] z-50 w-2 h-2 border-green-700 border-8 rounded-full drop-shadow-2xl"
         ></div>
-        <h3 class="text-xl font-semibold ms-20">My latest</h3>
-        <h2 class="relative z-50 text-5xl font-black">Projects</h2>
+        <h3 class="text-xl font-semibold ms-20">my latest</h3>
+        <h2 class="relative z-50 text-5xl font-black uppercase">Projects</h2>
         <p
           class="text-xs lg:text-sm font-light lg:font-extralight px-4 mt-4 lg:mt-0 lg:px-0"
         >
@@ -883,14 +889,35 @@
       <div
         class="flex flex-col lg:flex-row items-center lg:justify-center gap-2"
       >
-        <div>
+        <div
+          class="flex flex-col items-center gap-2 group project-card scale-0"
+        >
           <img class="w-72" src="./src/img/projects/nxbostore.png" alt="" />
+          <button
+            class="lg:scale-0 group-hover:scale-100 transition-all origin-top duration-150 bg-green-500 text-white text-xs px-4 py-2 rounded-lg uppercase drop-shadow-2xl shadow-green-500"
+          >
+            See more
+          </button>
         </div>
-        <div>
+        <div
+          class="flex flex-col items-center gap-2 group project-card scale-0"
+        >
           <img class="w-72" src="./src/img/projects/sbscms.png" alt="" />
+          <button
+            class="lg:scale-0 group-hover:scale-100 transition-transform origin-top duration-150 bg-green-500 text-white text-xs px-4 py-2 rounded-lg uppercase drop-shadow-2xl shadow-green-500"
+          >
+            See more
+          </button>
         </div>
-        <div>
+        <div
+          class="flex flex-col items-center gap-2 group project-card scale-0"
+        >
           <img class="w-72" src="./src/img/projects/sbslink.png" alt="" />
+          <button
+            class="lg:scale-0 group-hover:scale-100 transition-transform origin-top duration-150 bg-green-500 text-white text-xs px-4 py-2 rounded-lg uppercase drop-shadow-2xl shadow-green-500"
+          >
+            See more
+          </button>
         </div>
       </div>
       <div class="flex flex-col items-center mt-12">
@@ -1011,7 +1038,10 @@
       >
         Programmed by me in Visual Studio Code in HTML, CSS, JavaScript,
         Tailwind CSS. Designed by
-        <a class="underline underline-offset-4 text-green-500" href=""
+        <a
+          class="underline underline-offset-4 text-green-500"
+          href="https://www.linkedin.com/in/naiara-michelle-frega-3aa9b2198/"
+          target="_blank"
           >Naiara Michelle</a
         >
       </p>
@@ -1040,6 +1070,31 @@
         toggleMenu.classList.remove("opacity-0");
         closeMenu.classList.add("hidden");
       };
+
+      const animateOnScroll = () => {
+        const containers = document.querySelectorAll(".project-card");
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const index = Array.from(containers).indexOf(entry.target);
+              const delay = index * 100;
+              entry.target.style.animationDelay = `${delay}ms`;
+              entry.target.classList.add(
+                "scale-100",
+                "transition-transform",
+                "duration-300",
+              );
+            }
+          });
+        });
+
+        containers.forEach((container) => {
+          observer.observe(container);
+        });
+      };
+
+      animateOnScroll();
     </script>
   </body>
 </html>
