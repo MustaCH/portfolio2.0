@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ignacio Poletti - Front-End Developer</title>
+    <link rel="icon" type="x-icon" href="./favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,165 +14,10 @@
       rel="stylesheet"
     />
     <link href="./src/output.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
   </head>
-  <style>
-    #about-img {
-      box-shadow: -43px -44px 0px -2px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: -43px -44px 0px -2px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: -43px -44px 0px -2px rgba(0, 0, 0, 0.75);
-    }
-
-    .slide-in-blurred-left {
-      -webkit-animation: slide-in-blurred-left 1.5s
-        cubic-bezier(0.23, 1, 0.32, 1) both;
-      animation: slide-in-blurred-left 1.5s cubic-bezier(0.23, 1, 0.32, 1) both;
-    }
-
-    .slide-in-blurred-left-2 {
-      -webkit-animation: slide-in-blurred-left 2s cubic-bezier(0.23, 1, 0.32, 1)
-        both;
-      animation: slide-in-blurred-left 2s cubic-bezier(0.23, 1, 0.32, 1) both;
-    }
-
-    @-webkit-keyframes slide-in-blurred-left {
-      0% {
-        -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
-        transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
-        -webkit-transform-origin: 100% 50%;
-        transform-origin: 100% 50%;
-        -webkit-filter: blur(40px);
-        filter: blur(40px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: translateX(0) scaleY(1) scaleX(1);
-        transform: translateX(0) scaleY(1) scaleX(1);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-        -webkit-filter: blur(0);
-        filter: blur(0);
-        opacity: 1;
-      }
-    }
-    @keyframes slide-in-blurred-left {
-      0% {
-        -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
-        transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
-        -webkit-transform-origin: 100% 50%;
-        transform-origin: 100% 50%;
-        -webkit-filter: blur(40px);
-        filter: blur(40px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: translateX(0) scaleY(1) scaleX(1);
-        transform: translateX(0) scaleY(1) scaleX(1);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-        -webkit-filter: blur(0);
-        filter: blur(0);
-        opacity: 1;
-      }
-    }
-
-    .flip-in-hor-bottom {
-      -webkit-animation: flip-in-hor-bottom 0.5s
-        cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.2s both;
-      animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-        1.2s both;
-    }
-
-    @-webkit-keyframes flip-in-hor-bottom {
-      0% {
-        -webkit-transform: rotateX(80deg);
-        transform: rotateX(80deg);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: rotateX(0);
-        transform: rotateX(0);
-        opacity: 1;
-      }
-    }
-    @keyframes flip-in-hor-bottom {
-      0% {
-        -webkit-transform: rotateX(80deg);
-        transform: rotateX(80deg);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: rotateX(0);
-        transform: rotateX(0);
-        opacity: 1;
-      }
-    }
-
-    .shake-horizontal {
-      -webkit-animation: shake-horizontal 50s
-        cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
-      animation: shake-horizontal 50s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-        infinite both;
-    }
-
-    @-webkit-keyframes shake-horizontal {
-      0%,
-      100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-      }
-      10%,
-      30%,
-      50%,
-      70% {
-        -webkit-transform: translateX(-10px);
-        transform: translateX(-10px);
-      }
-      20%,
-      40%,
-      60% {
-        -webkit-transform: translateX(10px);
-        transform: translateX(10px);
-      }
-      80% {
-        -webkit-transform: translateX(8px);
-        transform: translateX(8px);
-      }
-      90% {
-        -webkit-transform: translateX(-8px);
-        transform: translateX(-8px);
-      }
-    }
-    @keyframes shake-horizontal {
-      0%,
-      100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-      }
-      10%,
-      30%,
-      50%,
-      70% {
-        -webkit-transform: translateX(-10px);
-        transform: translateX(-10px);
-      }
-      20%,
-      40%,
-      60% {
-        -webkit-transform: translateX(10px);
-        transform: translateX(10px);
-      }
-      80% {
-        -webkit-transform: translateX(8px);
-        transform: translateX(8px);
-      }
-      90% {
-        -webkit-transform: translateX(-8px);
-        transform: translateX(-8px);
-      }
-    }
-  </style>
   <body
-    class="lg:mx-24 bg-gradient-to-t from-neutral-600 via-neutral-400 to-neutral-600 drop-shadow-2xl"
+    class="lg:mx-24 bg-neutral-900 lg:bg-gradient-to-t from-neutral-600 via-neutral-400 to-neutral-600 drop-shadow-2xl"
   >
     <header
       class="relative lg:grid grid-cols-[repeat(5,_1fr)] grid-rows-[repeat(1,_1fr)] gap-x-[0px] gap-y-[0px]"
@@ -219,9 +65,14 @@
       </div>
       <nav
         id="dropdown"
-        class="absolute left-10 top-12 lg:hidden text-white h-fit backdrop-blur-lg rounded-lg py-6 drop-shadow-2xl transform scale-0 origin-top-right"
+        class="absolute z-50 left-10 top-12 lg:hidden text-white h-fit backdrop-blur-lg rounded-lg py-6 drop-shadow-2xl transform scale-0 origin-top-right"
       >
         <div class="">
+          <h2
+            class="lg:inline uppercase text-white text-center font-bold text-3xl mb-2"
+          >
+            INGP<span class="text-green-500">.dev</span>
+          </h2>
           <ul
             class="flex flex-col gap-6 justify-between px-24 text-lg text-center font-semibold"
           >
@@ -230,7 +81,11 @@
             </a>
             <a href="#about"><li>ABOUT ME</li></a>
             <a href="#projects"><li>PROJECTS</li></a>
-            <a class="text-green-500" href="#contact"><li>LET'S TALK!</li></a>
+            <a
+              class="text-green-500 underline underline-offset-4 decoration-4"
+              href="#contact"
+              ><li>LET'S TALK!</li></a
+            >
           </ul>
         </div>
       </nav>
@@ -328,7 +183,7 @@
         class="hidden [grid-area:1_/_1_/_6_/_3] lg:flex flex-col justify-between items-center bg-neutral-900 drop-shadow-2xl overflow-x-hidden"
       >
         <h2 class="lg:inline uppercase text-white font-bold text-3xl my-4">
-          Portfolio
+          INGP<span class="text-green-500">.dev</span>
         </h2>
         <div class="z-50 font-bold uppercase mb-36">
           <h2 class="text-white text-3xl slide-in-blurred-left">My name is</h2>
@@ -425,7 +280,7 @@
         />
       </div>
       <div class="relative my-16 lg:my-0">
-        <div class="relative w-80">
+        <div class="relative w-80 lg:w-96">
           <svg
             class="hidden lg:inline absolute right-[-10%] lg:right-[-30%] opacity-25"
             width="220"
@@ -746,14 +601,14 @@
           ></div>
           <h2 class="text-left font-semibold">who am i?</h2>
           <h3 class="relative z-50 text-5xl font-black">HELLO</h3>
-          <p class="text-sm">
-            I am a person with a very active mind, I am always on the move and
-            always thinking about how to improve myself on a personal level in
-            all aspects. I really enjoy working in a team and supporting each
-            other with my colleagues to push us to give better results. I
-            believe that learning, especially in this field, is something
-            constant, there are always new things to learn and different ways to
-            solve a problem, we just need to be open to the possibilities.
+          <p class="text-sm lg:text-lg">
+            I'm a guy with a very active mind, always on the move and thinking
+            about how to improve myself on a personal level in all aspects. I
+            really enjoy working in a team and supporting each other with my
+            colleagues to push us to give better results. I believe that
+            learning, especially on this field, is something constant, there are
+            always new things to learn and different ways to solve a problem, we
+            just need to be open to the possibilities.
           </p>
         </div>
         <div class="mt-6">
@@ -889,7 +744,9 @@
       <div
         class="flex flex-col lg:flex-row items-center lg:justify-center gap-2"
       >
-        <div
+        <a
+          href="./pages/NXBOstore.html"
+          data-project-id="project1"
           class="flex flex-col items-center gap-2 group project-card scale-0"
         >
           <img class="w-72" src="./src/img/projects/nxbostore.png" alt="" />
@@ -898,8 +755,10 @@
           >
             See more
           </button>
-        </div>
-        <div
+        </a>
+        <a
+          href="./pages/SBScms.html"
+          data-project-id="project3"
           class="flex flex-col items-center gap-2 group project-card scale-0"
         >
           <img class="w-72" src="./src/img/projects/sbscms.png" alt="" />
@@ -908,8 +767,10 @@
           >
             See more
           </button>
-        </div>
-        <div
+        </a>
+        <a
+          href="./pages/SBSlink.html"
+          data-project-id="project2"
           class="flex flex-col items-center gap-2 group project-card scale-0"
         >
           <img class="w-72" src="./src/img/projects/sbslink.png" alt="" />
@@ -918,7 +779,7 @@
           >
             See more
           </button>
-        </div>
+        </a>
       </div>
       <div class="flex flex-col items-center mt-12">
         <a href="https://github.com/MustaCH" target="_blank">
@@ -1046,55 +907,6 @@
         >
       </p>
     </footer>
-    <script>
-      let dropdown = document.querySelector("#dropdown");
-      let toggleMenu = document.querySelector("#toggle-menu");
-      let closeMenu = document.querySelector("#close-menu");
-
-      const OpenSidebar = () => {
-        dropdown.classList.add(
-          "scale-100",
-          "transition-transform",
-          "duration-150",
-        );
-        toggleMenu.classList.add(
-          "opacity-0",
-          "transition-opacity",
-          "duration-150",
-        );
-        closeMenu.classList.remove("hidden");
-      };
-
-      const CloseSidebar = () => {
-        dropdown.classList.remove("scale-100");
-        toggleMenu.classList.remove("opacity-0");
-        closeMenu.classList.add("hidden");
-      };
-
-      const animateOnScroll = () => {
-        const containers = document.querySelectorAll(".project-card");
-
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              const index = Array.from(containers).indexOf(entry.target);
-              const delay = index * 100;
-              entry.target.style.animationDelay = `${delay}ms`;
-              entry.target.classList.add(
-                "scale-100",
-                "transition-transform",
-                "duration-300",
-              );
-            }
-          });
-        });
-
-        containers.forEach((container) => {
-          observer.observe(container);
-        });
-      };
-
-      animateOnScroll();
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
