@@ -3218,6 +3218,14 @@ video {
     background-image: linear-gradient(to top, var(--tw-gradient-stops));
   }
 
+  .lg\:bg-bottom {
+    background-position: bottom;
+  }
+
+  .lg\:bg-top {
+    background-position: top;
+  }
+
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;

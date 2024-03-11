@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link href="./src/output.css" rel="stylesheet" />
+    <meta name="view-transition" content="same-origin" />
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body
@@ -224,7 +225,7 @@
         </div>
       </div>
       <div
-        class="[grid-area:2_/_3_/_6_/_6] bg-[url('./img/header-img-gray.jpg')] lg:grayscale bg-cover bg-center h-lvh"
+        class="[grid-area:2_/_3_/_6_/_6] bg-[url('./img/header-img-gray.jpg')] lg:grayscale bg-cover bg-center lg:bg-top h-lvh"
       >
         <div class="lg:hidden flex flex-col items-center">
           <div class="z-50 font-bold uppercase mt-80">
@@ -748,7 +749,7 @@
         <a
           href="./pages/NXBOstore.html"
           data-project-id="project1"
-          class="flex flex-col items-center gap-2 group project-card scale-0"
+          class="card card-transition-small flex flex-col items-center gap-2 group project-card scale-0"
         >
           <img class="w-72" src="./src/img/projects/nxbostore.png" alt="" />
           <button
@@ -762,7 +763,11 @@
           data-project-id="project3"
           class="flex flex-col items-center gap-2 group project-card scale-0"
         >
-          <img class="w-72" src="./src/img/projects/sbscms.png" alt="" />
+          <img
+            class="w-72 card card-transition-small"
+            src="./src/img/projects/sbscms.png"
+            alt=""
+          />
           <button
             class="lg:scale-0 group-hover:scale-100 transition-transform origin-top duration-150 bg-green-500 text-white text-xs px-4 py-2 rounded-lg uppercase drop-shadow-2xl shadow-green-500"
           >
@@ -774,7 +779,11 @@
           data-project-id="project2"
           class="flex flex-col items-center gap-2 group project-card scale-0"
         >
-          <img class="w-72" src="./src/img/projects/sbslink.png" alt="" />
+          <img
+            class="w-72 card card-transition-small"
+            src="./src/img/projects/sbslink.png"
+            alt=""
+          />
           <button
             class="lg:scale-0 group-hover:scale-100 transition-transform origin-top duration-150 bg-green-500 text-white text-xs px-4 py-2 rounded-lg uppercase drop-shadow-2xl shadow-green-500"
           >
